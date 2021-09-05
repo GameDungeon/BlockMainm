@@ -1,19 +1,16 @@
-html, 
-body {
+html {
     height: 100%;
     margin: 0;
 }
 
-h1 {
-  font-weight: normal;
-  font-size: 140%; 
-}
-
-table {
-  height: 100%;
-  width: 100%; 
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    font-family: sans-serif;
+    overflow: hidden;
 }
 
 #blocklyArea {
-  height: 99%; 
+    height: 99%;
 }

@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blockly Demo: Resizable Blockly (Part 2)</title>
-
-    <script src="../dist/main.js"></script>
+    <title></title>
+    <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+    <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[i] %>">
+    <% } %>
 </head>
 
 <body>
-
     <div id="blocklyArea"></div>
 
     <div id="blocklyDiv" style="position: absolute"></div>
@@ -25,6 +25,10 @@
         <block type="text"></block>
         <block type="text_print"></block>
     </xml>
+
+    <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+    <% } %>
 </body>
 
 </html>
