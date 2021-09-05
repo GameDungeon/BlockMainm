@@ -27,11 +27,6 @@ module.exports = {
                 test: /\.s(a|c)ss$/,
                 exclude: /\.module.(s(a|c)ss)$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
-            },
-            {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: ["babel-loader"]    
             }
         ]
     },
